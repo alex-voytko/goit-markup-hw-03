@@ -4,6 +4,7 @@
     --secondary-text-color: #757575;
     --accent-color: #2196F3;
     --background-color: #F5F4FA;
+    --contrast-color: #2F303A;
 }
 *,
 *::before,
@@ -23,7 +24,7 @@ ul {
     list-style: none;
 }
 .body-container {
-    background-color: lightgray;
+    background-color: var(--title-text-color);
     width: 1600px;
     padding: 0;
     margin: 0 auto;
@@ -99,12 +100,17 @@ ul {
 .contacts-list .link:focus {
     color: var(--accent-color);
 }
+.section-1-container,
+.section-2-container,
+.section-3-container {
+    width: 1600px;
+}
+
 .section-1 {
-    display: block;
     width: 1600px;
     align-items: center;
-    background-color: #2F303A;
-    padding: 200px 452px
+    background-color: var(--contrast-color);
+    padding: 200px 452px;
 }
 .title {
     font-weight: 900;
@@ -135,17 +141,18 @@ ul {
 }
 .section-2 {
     width: 1200px;
-    padding: 0 15px;
+    padding: 66.4px 15px 94px 15px;
     margin: 0 auto;
     background-color: var(--title-text-color);
 }
 .section-2 h2 {
     opacity: 0;
 }
-.work-list {
+.section-2 ul,
+.section-3 ul,
+.section-4 ul {
     display: flex;
     justify-content: space-between;
-    margin-top: 66.4px;
 }
 .work-list li {
     width: 270px;
@@ -169,12 +176,13 @@ ul {
 }
 .section-3 {
     width: 1200px;
-    padding: 0 15px;
+    padding: 0px 15px 94px 15px;
     margin: 0 auto;
     background-color: var(--title-text-color);
 }
-.section-3 h2 {
-    margin-top: 94px;
+.section-3 h2,
+.section-4 h2 {
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.167;
@@ -182,36 +190,67 @@ ul {
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
 }
-.name {
+.section-4-container {
+    width: 1600px;
+    background-color: #F5F4FA;
+}
+.section-4 {
+    width: 1200px;
+    padding: 94px 15px 94px 15px;
+    margin: 0 auto;
+    background-color: #F5F4FA;
+}
+.img-content {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: var(--title-text-color);
+}
+.img-content h3 {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.188;
+    text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
 }
-.profession {
+.section-4 p {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.188;
+    text-align: center;
     letter-spacing: 0.03em;
+    margin-top: 10px;
     color: var(--secondary-text-color);
 }
-.address {
+.footer {
+    width: 1600px;
+    padding: 60px 215px 60px 215px;
+    background-color: var(--contrast-color);
+}
+.footer .web-logo {
+    display: block;
+    margin-bottom: 20px;
+}
+address .address {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.714;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
+    display: block;
 }
-.adress-block {
+address {
     font-style: normal;
 }
-.contacts {
+address .contacts {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.714;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+}
+address li {
+    margin-top: 9px;
 }
 
 /* portfolio html */
