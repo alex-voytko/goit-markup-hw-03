@@ -296,7 +296,9 @@ address li {
     margin-bottom: 30px;
     outline: 1px solid #eeeeee;
 }
-.projects-list .item:nth-child(n3) {
+.projects-list .item:nth-child(3),
+.projects-list .item:nth-child(6),
+.projects-list .item:nth-child(9) {
     margin-right: 0;
 }
 .projects-list h2 {
