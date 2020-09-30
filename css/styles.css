@@ -114,9 +114,6 @@ ul {
     text-transform: uppercase;
     color: var(--title-text-color);
 }
-.container h1 {
-
-}
 .section-1 .main-button {
     display: block;
     width: 200px;
@@ -125,8 +122,6 @@ ul {
     border: none;
     margin: 30px auto 0 auto;
     background-color: var(--accent-color);
-}
-.main-button .link {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.875;
@@ -142,8 +137,7 @@ ul {
     display: none;
 }
 .section-2 ul,
-.section-3 ul,
-.section-4 ul {
+.section-3 ul {
     display: flex;
     justify-content: space-between;
 }
@@ -190,40 +184,44 @@ ul {
     margin: 0 auto;
     background-color: #F5F4FA;
 }
-.img-content {
+.section-4 ul li {
     width: 270px;
-    padding: 32px auto;
+    padding: 0 0 30px 0;
     background-color: var(--title-text-color);
 }
-.img-content h3 {
+.section-4 img {
+    display: block;
+}
+.section-4 li h3 {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.188;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
-    padding-top: 30px;
+    margin: 30px auto 10px auto;
 }
-.section-4 p {
+.section-4 li p {
+    display: block;
+    flex-wrap: wrap;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.188;
     text-align: center;
     letter-spacing: 0.03em;
-    margin-top: 10px;
+    margin-top: 0 auto;
     color: var(--secondary-text-color);
-    padding-bottom: 30px;
+    margin: 0 auto;
 }
-.section-4 ul li {
+.section-4 ul {
     display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .footer {
-    padding: 60px 215px;
+    padding: 60px 0;
     background-color: var(--contrast-color);
 }
-.footer .web-logo {
+.footer .webstudio-link {
     display: block;
     margin-bottom: 20px;
 }
@@ -259,7 +257,7 @@ address li:last-child {
 /* portfolio html */
 .our-works-section {
     margin: 0 auto;
-    padding: 94px 15px;
+    padding: 94px 0;
     background-color: var(--title-text-color);
 }
 .our-works-section .title {
@@ -302,6 +300,12 @@ address li:last-child {
 .projects-list .item:nth-child(6),
 .projects-list .item:nth-child(9) {
     margin-right: 0;
+}
+.projects-list .item:nth-child(n+7) {
+    margin-bottom: 0;
+}
+.projects-list img {
+    display: block;
 }
 .projects-list h2 {
     font-weight: 700;
