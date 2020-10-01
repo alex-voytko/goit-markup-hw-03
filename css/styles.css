@@ -78,6 +78,12 @@ ul {
 .navigation-menu .link:focus {
     color: var(--accent-color);
 }    
+.navigation-menu .item.active {
+    color: var(--accent-color);
+}
+.navigation-menu a {
+    color: var(--accent-color);
+}
 .contacts-list {
     display: flex;
     align-items: center;
