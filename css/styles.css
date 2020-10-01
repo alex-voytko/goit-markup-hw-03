@@ -67,6 +67,13 @@ ul {
     letter-spacing: 0.02em; 
     color: var(--primary-text-color);
 }
+.navigation-menu .link-active {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em; 
+    color: var(--accent-color);
+}    
 .navigation-menu .item {
     display: block;
     margin-right: 50px;
@@ -76,12 +83,6 @@ ul {
 }
 .navigation-menu .link:hover,
 .navigation-menu .link:focus {
-    color: var(--accent-color);
-}    
-.navigation-menu .item.active {
-    color: var(--accent-color);
-}
-.navigation-menu a {
     color: var(--accent-color);
 }
 .contacts-list {
