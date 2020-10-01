@@ -67,11 +67,7 @@ ul {
     letter-spacing: 0.02em; 
     color: var(--primary-text-color);
 }
-.navigation-menu .link-active {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.143;
-    letter-spacing: 0.02em; 
+.navigation-menu .link.active {
     color: var(--accent-color);
 }    
 .navigation-menu .item {
