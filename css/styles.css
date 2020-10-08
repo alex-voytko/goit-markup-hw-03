@@ -278,6 +278,17 @@ ul {
 .section-4 .social-links-icons li:hover {
     background-color: var(--accent-color);
 }
+.section-5 {
+    background-color: teal;
+}
+.section-5 ul {
+    display: flex;
+}
+.section-5 ul a {
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 .footer {
     padding: 60px 0;
     background-color: var(--contrast-color);
